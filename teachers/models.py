@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.urls import reverse 
+
 SUBJECT_CHOICES = (
     ('русский язык и литература', 'Русский язык и Литература'),
     ('румынский', 'Румынский язык и литература'),
@@ -18,14 +20,20 @@ SUBJECT_CHOICES = (
 class Teacher(models.Model):
     full_name = models.CharField(max_length=255, verbose_name="ФИО")
     subject = models.CharField(max_length=100, choices=SUBJECT_CHOICES, blank=True, null=True, verbose_name="Предмет")
-    description = models.TextField(null=True, blank=True,  verbose_name="Описание")
-    image = models.ImageField(upload_to='teachers/', null=True, blank=True, verbose_name="Фотография")
+    description = models.TextField(null=True, blank=True, verbose_name="Описание")
+    image = models.ImageField(upload_to='teachers/', verbose_name="Фотография")
+    is_admin = models.BooleanField(default=False, blank=True, null=True)
+    slug = models.SlugField(verbose_name="URL", null=True, blank=True)
 
 
     def __str__(self):
         return self.full_name
 
+    def get_absolute_url(self):
+        return reverse("teacher_detail", kwargs={"slug": self.slug})
+    
+
     class Meta:
-        ordering = ['full_name']
+        ordering = ['is_admin']
         verbose_name = 'Учитель'
         verbose_name_plural = 'Учителя'
