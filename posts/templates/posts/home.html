@@ -2,16 +2,16 @@
 {% load i18n %}
 {% block content %}
 
-<div class="container mx-auto">
+<div class="container">
     {% for post in posts %}
     <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
       {% if post.image %}
-      <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="{{ post.image.url }}" alt="" width="384" height="512">
+      <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full" src="{{ post.image.url }}" alt="" width="384" height="512">
       {% endif %}
-      <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+      <div class="pt-6 md:p-8 space-y-4">
         <blockquote>
           <p class="text-lg font-semibold">
-            {{ post.text }}
+            {{ post.text|truncatewords:5 }}
           </p>
         </blockquote>
         <figcaption class="font-medium">
