@@ -1,9 +1,10 @@
-{% extends "teachers/base.html" %}
+{% extends "main/base.html" %}
 {% load i18n %}
 {% block content %}
 
 <div class="container">
-    {% for post in posts %}
+    {% for post in page_object.object_list %}
+    <div class="row my-5">
     <figure class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
       {% if post.image %}
       <img class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full" src="{{ post.image.url }}" alt="" width="384" height="512">
@@ -11,18 +12,46 @@
       <div class="pt-6 md:p-8 space-y-4">
         <blockquote>
           <p class="text-lg font-semibold">
-            {{ post.text|truncatewords:5 }}
+            {{ post.title }}
           </p>
         </blockquote>
         <figcaption class="font-medium">
           <div class="text-cyan-600">
-            Sarah Dayan
+            {{ post.text|truncatewords:20 }}
           </div>
-          <div class="text-gray-500">
-            Staff Engineer, Algolia
-          </div>
-        </figcaption>
+            </figcaption>
+      </div>
       </div>
     </figure>
+    
 {% endfor %}
+
+{% if is_paginated %}
+  
+
+  
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item {% if not previous_url %}disabled{% endif %}">
+      <a class="page-link" href="{{ previous_url }}" tabindex="-1">Предыдущая
+      </a>
+    </li>
+    {% for n in page_object.paginator.page_range %}
+    
+    {% if page_object.number == n %}
+    <li class="page-item active">
+      <a class="page-link" href="?page={{ n }}">{{ n }} <span class="sr-only">(current)</span></a>
+    </li>
+    {% elif n > page_object.number|add:-3 and n < page_object.number|add:3%}
+    <li class="page-item">
+      <a class="page-link" href="?page={{ n }}">{{ n }}</a>
+    </li>
+    {% endif %}
+    {% endfor %}
+    <li class="page-item {% if not next_url %}disabled{% endif %}">
+      <a class="page-link" href="{{ next_url }}">Следующая</a>
+    </li>
+  </ul>
+</nav>
+{% endif %}
 {% endblock content %}

@@ -21,44 +21,43 @@ msgstr ""
 
 #: school/settings.py:110
 msgid "English"
-msgstr ""
+msgstr "Engleză"
 
 #: school/settings.py:111
 msgid "Romanian"
-msgstr ""
+msgstr "Romană"
 
 #: school/settings.py:112
 msgid "Russian"
-msgstr ""
+msgstr "Rusă"
 
 #: school/settings.py:113
 msgid "Ukrainian"
-msgstr ""
+msgstr "Ucraineană"
 
 #: teachers/templates/teachers/navbar.html:9
 msgid "Лицей им. В.Сухомлинского"
-msgstr ""
+msgstr "L.T. V. Suhomlinschii"
 
 #: teachers/templates/teachers/navbar.html:16
 msgid "Главная"
-msgstr ""
+msgstr "Principală"
 
 #: teachers/templates/teachers/navbar.html:19
 msgid "Учителя"
-msgstr ""
+msgstr "Profesori"
 
 #: teachers/templates/teachers/navbar.html:22
 msgid "Новости"
-msgstr ""
+msgstr "Noutăți"
 
 #: teachers/templates/teachers/navbar.html:25
 msgid "Контакты"
-msgstr ""
+msgstr "Contacte"
 
 #: teachers/templates/teachers/navbar.html:29
 msgid "placeholder=\"Поиск по сайту\""
-msgstr ""
-
+msgstr "placeholder=\"Caută prin site\""
 #: teachers/templates/teachers/navbar.html:30
 msgid "Искать"
-msgstr ""
+msgstr "Caută"

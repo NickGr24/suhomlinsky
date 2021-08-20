@@ -1,10 +1,25 @@
-{% extends "teachers/base.html" %}
+{% extends "main/base.html" %}
 
 {% block content %}
-<div class="cotainer">
+<div class="container">
     <div class="row">
         <h1 class='text-center fs-3 font-bold'>Как нас найти?</h1>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.7394005654473!2d27.286835558453095!3d48.17310363072189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47335cc7cb6c67b9%3A0xb12c850f019695ac!2z0KLQtdC-0YDQtdGC0LjRh9C10YHQutC40Lkg0LvQuNGG0LXQuSDQuNC8LiDQodGD0YXQvtC80LvQuNC90YHQutC-0LPQviwgRWRpbmXFoywg0JzQvtC70LTQsNCy0LjRjw!5e0!3m2!1sru!2s!4v1628317639114!5m2!1sru!2s" width="400" height="400" style="border: 10;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2660.7394005654473!2d27.286835558453095!3d48.17310363072189!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47335cc7cb6c67b9%3A0xb12c850f019695ac!2z0KLQtdC-0YDQtdGC0LjRh9C10YHQutC40Lkg0LvQuNGG0LXQuSDQuNC8LiDQodGD0YXQvtC80LvQuNC90YHQutC-0LPQviwgRWRpbmXFoywg0JzQvtC70LTQsNCy0LjRjw!5e0!3m2!1sru!2s!4v1628317639114!5m2!1sru!2s"
+            width="400" height="400" style="border: 10;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="row">
+        <h2 class="text-center fs-3 font-semibold">Свяжитесь с нами</h2>
+        <div class="contact-methods fs-4 d-flex justify-content-around">
+            <div class="phone">
+                <i class="fas fa-phone"></i>
+                0246 81 226
+            </div>
+            <div class="email">
+                <i class="fas fa-envelope"></i>
+                ltiv.suhomlinschii@gmail.com
+            </div>
+        </div>
     </div>
 </div>
 {% endblock content %}

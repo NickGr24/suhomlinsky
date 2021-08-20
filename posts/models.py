@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 
+from django.urls import reverse
+
 class Post(models.Model):
     title = models.CharField(max_length=255, verbose_name="Название поста")
     text = models.TextField(verbose_name="Текст поста")
@@ -10,7 +12,7 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-
+        
     class Meta:
         ordering = ['-timestamp']
         verbose_name = 'Пост'
