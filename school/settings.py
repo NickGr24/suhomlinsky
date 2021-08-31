@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-^7=9e#u#r@7kl@rg(976t5%kam#+7(d)sazhvqad5@-$mk5=b+
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['gentle-savannah-65694.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['gentle-savannah-65694.herokuapp.com', '127.0.0.1', '0.0.0.0:5000']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -59,11 +59,14 @@ WSGI_APPLICATION = 'school.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd6nj7iotu4q724',
+        'HOST': 'ec2-34-193-112-164.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'USER': 'kwkrfqbhwjbjmf',
+        'PASSWORD': '02b3278aa970a4f2b78069b18f0fc628cbb55fbf9c765839e48473a2f4c0216a'
     }
 }
-
 
 AUTH_PASSWORD_VALIDATORS = [
     {
