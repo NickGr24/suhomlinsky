@@ -93,11 +93,10 @@ LOCALE_PATHS = [
 ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, '/static/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'school-main/static')
 STATICFILES_DIRS = [
-    BASE_DIR / 'school',
-    BASE_DIR / 'teachers', 
-    BASE_DIR / 'main',
+    BASE_DIR / 'teachers/static', 
+    BASE_DIR / 'main/static',
 ]
 
 MEDIA_URL = '/media/'
