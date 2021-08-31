@@ -4,11 +4,19 @@ from django.shortcuts import get_object_or_404
 
 from django.core.paginator import Paginator
 
+from django.db.models import Q
+
 from .models import Post
  
 def posts_list(request):
-    posts = Post.objects.all()
+
+    search_query = request.GET.get('search', '')
+    if search_query and search_query != '':
+        posts = Post.objects.filter(Q(title__icontains=search_query) | Q(text__icontains=search_query))
+    else:
+        posts = Post.objects.all()
     paginator = Paginator(posts, 7)
+
 
     page_number = request.GET.get('page', 1)
     page = paginator.get_page(page_number)

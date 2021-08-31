@@ -25,7 +25,7 @@
             <a class="nav-link" id="nav-contacts" aria-current="page" href="{{ contacts_url }}">{% blocktrans %}Контакты{% endblocktrans %}</a>
           </li>
         </ul>
-        <form class="d-flex" action="{% url 'homepage' %}">
+        <form class="d-flex" action="{% url 'posts' %}">
           <input class="form-control me-2" type="search" name="search" {% blocktrans %}placeholder="Поиск по сайту"{% endblocktrans %} aria-label="Search">
           <button class="btn btn-outline-dark" type="submit">{% blocktrans %}Искать{% endblocktrans %}</button>
         </form> 

@@ -1,20 +1,24 @@
 from django.shortcuts import render
 
+
+from django.utils import translation
+from django.shortcuts import redirect
+from django.conf import settings
+from django.http import HttpResponseRedirect
 from posts.models import Post
-from teachers.models import Teacher
 
 
 def contacts_page(request):
     return render(request, 'contacts.html')
 
 
+def set_lang(request):
+    language = request.POST.get('language', settings.LANGUAGE_CODE)
+    translation.activate(language)
+    request.session[translation.LANGUAGE_SESSION_KEY] = language
+    return HttpResponseRedirect('')
+    
 def homepage(request):
-    search_query = request.GET.get('search', '')
-    if search_query:
-        #    teachers = Teacher.objects.all()
-        teachers = Teacher.objects.filter(full_name__icontains=search_query)
-    else:
-        teachers = Teacher.objects.all()
 
     context = {
         'posts': Post.objects.all()

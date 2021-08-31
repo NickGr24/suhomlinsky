@@ -43,7 +43,7 @@ msgstr ""
 
 #: teachers/templates/teachers/navbar.html:16
 msgid "Главная"
-msgstr ""
+msgstr "Головна"
 
 #: teachers/templates/teachers/navbar.html:19
 msgid "Учителя"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: teachers/templates/teachers/navbar.html:25
 msgid "Контакты"
-msgstr ""
+msgstr "Контакти"
 
 #: teachers/templates/teachers/navbar.html:29
 msgid "placeholder=\"Поиск по сайту\""
@@ -63,4 +63,4 @@ msgstr ""
 
 #: teachers/templates/teachers/navbar.html:30
 msgid "Искать"
-msgstr ""
+msgstr "Шукати"

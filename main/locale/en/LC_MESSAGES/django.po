@@ -60,4 +60,4 @@ msgstr "placeholder=\"Search\""
 
 #: teachers/templates/teachers/navbar.html:30
 msgid "Искать"
-msgstr ""
+msgstr "Search"

@@ -80,10 +80,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
-LANGUAGE_CODE = 'ru-RU'
-
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Chisinau'
 
 USE_I18N = True
 
@@ -108,8 +105,10 @@ MEDIA_ROOT = BASE_DIR / 'media/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-LANGUAGES = (('en', _('English')),
+LANGUAGE_CODE = 'ru'
+
+LANGUAGES = (('ru', _('Russian')),
+            ('en', _('English')),
             ('ro', _('Romanian')),
-            ('ru', _('Russian')),
             ('uk', _('Ukrainian'))
 )
