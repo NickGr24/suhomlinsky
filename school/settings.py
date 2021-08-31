@@ -11,7 +11,7 @@ SECRET_KEY = 'django-insecure-^7=9e#u#r@7kl@rg(976t5%kam#+7(d)sazhvqad5@-$mk5=b+
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['gentle-savannah-65694.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['suhomlinsky.herokuapp.com', '127.0.0.1']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
