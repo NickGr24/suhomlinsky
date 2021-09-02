@@ -6,13 +6,6 @@ from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
-SECRET_KEY = 'django-insecure-^7=9e#u#r@7kl@rg(976t5%kam#+7(d)sazhvqad5@-$mk5=b+'
-
-DEBUG = True
-
-ALLOWED_HOSTS = ['*']
-
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -60,12 +53,8 @@ WSGI_APPLICATION = 'school.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd6nj7iotu4q724',
-        'HOST': 'ec2-34-193-112-164.compute-1.amazonaws.com',
-        'PORT': 5432,
-        'USER': 'kwkrfqbhwjbjmf',
-        'PASSWORD': '02b3278aa970a4f2b78069b18f0fc628cbb55fbf9c765839e48473a2f4c0216a'
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -97,11 +86,8 @@ LOCALE_PATHS = [
 ]
 
 STATIC_URL = '/static/'
+
 STATIC_ROOT = os.path.join(BASE_DIR, 'school-main/static')
-STATICFILES_DIRS = [
-    BASE_DIR / 'teachers/static', 
-    BASE_DIR / 'main/static',
-]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media/'
