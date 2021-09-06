@@ -15,9 +15,9 @@ ALLOWED_HOSTS = ['*']
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        'USER': 'postgres',
-        'PASSWORD': 123,
+        'NAME': 'school',
+        'USER': 'nikita',
+        'PASSWORD': '12',
         'HOST': 'localhost',
         'PORT': 5432
     }
@@ -26,9 +26,9 @@ DATABASES = {
 
 SECRET_KEY = 'django-insecure-^7125768lgdmwkl@rg(976t5%kam#+7(d)sazhvqad5@-$mk5=b+'
 
-STATICFILES_DIRS = [
-    BASE_DIR / 'teachers/static', 
-    BASE_DIR / 'main/static',
-]
+#STATICFILES_DIRS = [
+#    BASE_DIR / 'teachers/static', 
+#    BASE_DIR / 'main/static',
+#]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
