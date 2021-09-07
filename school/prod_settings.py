@@ -7,7 +7,7 @@ from django.utils.translation import ugettext_lazy as _
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
@@ -26,9 +26,9 @@ DATABASES = {
 
 SECRET_KEY = 'django-insecure-^7125768lgdmwkl@rg(976t5%kam#+7(d)sazhvqad5@-$mk5=b+'
 
-#STATICFILES_DIRS = [
-#    BASE_DIR / 'teachers/static', 
-#    BASE_DIR / 'main/static',
-#]
+STATICFILES_DIRS = [
+    BASE_DIR / 'teachers/static', 
+    BASE_DIR / 'main/static',
+]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
