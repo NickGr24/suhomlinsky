@@ -60,7 +60,7 @@ DATABASES = {
 
         'NAME': 'school',
 
-        'USER': 'postgres',
+        'USER': 'nikita',
 
         'PASSWORD': '12',
 
