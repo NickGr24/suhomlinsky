@@ -6,7 +6,6 @@ from django.utils.translation import ugettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']

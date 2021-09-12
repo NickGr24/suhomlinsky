@@ -6969,3 +6969,102 @@ ModuleNotFoundError: No module named 'school'
 [2021-09-06 07:17:49 +0000] [3226] [INFO] Booting worker with pid: 3226
 [2021-09-06 07:17:49 +0000] [3227] [INFO] Booting worker with pid: 3227
 [2021-09-06 07:17:49 +0000] [3228] [INFO] Booting worker with pid: 3228
+[2021-09-11 12:18:26 +0000] [3225] [INFO] Handling signal: term
+[2021-09-11 15:18:26 +0300] [3226] [INFO] Worker exiting (pid: 3226)
+[2021-09-11 15:18:26 +0300] [3227] [INFO] Worker exiting (pid: 3227)
+[2021-09-11 15:18:26 +0300] [3228] [INFO] Worker exiting (pid: 3228)
+[2021-09-11 12:18:27 +0000] [3225] [INFO] Shutting down: Master
+[2021-09-11 12:18:47 +0000] [116048] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:18:47 +0000] [116048] [INFO] Listening at: http://127.0.0.1:8000 (116048)
+[2021-09-11 12:18:47 +0000] [116048] [INFO] Using worker: sync
+[2021-09-11 12:18:47 +0000] [116049] [INFO] Booting worker with pid: 116049
+[2021-09-11 12:18:47 +0000] [116051] [INFO] Booting worker with pid: 116051
+[2021-09-11 12:18:47 +0000] [116050] [INFO] Booting worker with pid: 116050
+Not Found: /favicon.ico
+[2021-09-11 12:23:02 +0000] [116048] [INFO] Handling signal: term
+[2021-09-11 15:23:02 +0300] [116049] [INFO] Worker exiting (pid: 116049)
+[2021-09-11 15:23:02 +0300] [116050] [INFO] Worker exiting (pid: 116050)
+[2021-09-11 15:23:02 +0300] [116051] [INFO] Worker exiting (pid: 116051)
+[2021-09-11 12:23:03 +0000] [116048] [INFO] Shutting down: Master
+[2021-09-11 12:23:08 +0000] [116086] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:23:08 +0000] [116086] [INFO] Listening at: http://127.0.0.1:8000 (116086)
+[2021-09-11 12:23:08 +0000] [116086] [INFO] Using worker: sync
+[2021-09-11 12:23:08 +0000] [116087] [INFO] Booting worker with pid: 116087
+[2021-09-11 12:23:08 +0000] [116088] [INFO] Booting worker with pid: 116088
+[2021-09-11 12:23:08 +0000] [116089] [INFO] Booting worker with pid: 116089
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+[2021-09-11 12:24:49 +0000] [116086] [INFO] Handling signal: term
+[2021-09-11 15:24:49 +0300] [116087] [INFO] Worker exiting (pid: 116087)
+[2021-09-11 15:24:49 +0300] [116088] [INFO] Worker exiting (pid: 116088)
+[2021-09-11 15:24:49 +0300] [116089] [INFO] Worker exiting (pid: 116089)
+[2021-09-11 12:24:50 +0000] [116086] [INFO] Shutting down: Master
+[2021-09-11 12:24:55 +0000] [116109] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:24:55 +0000] [116109] [INFO] Listening at: http://127.0.0.1:8000 (116109)
+[2021-09-11 12:24:55 +0000] [116109] [INFO] Using worker: sync
+[2021-09-11 12:24:55 +0000] [116110] [INFO] Booting worker with pid: 116110
+[2021-09-11 12:24:55 +0000] [116111] [INFO] Booting worker with pid: 116111
+[2021-09-11 12:24:55 +0000] [116112] [INFO] Booting worker with pid: 116112
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
+[2021-09-11 12:33:18 +0000] [116109] [INFO] Handling signal: term
+[2021-09-11 15:33:18 +0300] [116110] [INFO] Worker exiting (pid: 116110)
+[2021-09-11 15:33:18 +0300] [116111] [INFO] Worker exiting (pid: 116111)
+[2021-09-11 15:33:18 +0300] [116112] [INFO] Worker exiting (pid: 116112)
+[2021-09-11 12:33:18 +0000] [116109] [INFO] Shutting down: Master
+[2021-09-11 12:33:25 +0000] [116376] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:33:25 +0000] [116376] [INFO] Listening at: http://127.0.0.1:8000 (116376)
+[2021-09-11 12:33:25 +0000] [116376] [INFO] Using worker: sync
+[2021-09-11 12:33:25 +0000] [116377] [INFO] Booting worker with pid: 116377
+[2021-09-11 12:33:25 +0000] [116378] [INFO] Booting worker with pid: 116378
+[2021-09-11 12:33:26 +0000] [116379] [INFO] Booting worker with pid: 116379
+[2021-09-11 12:45:33 +0000] [116376] [INFO] Handling signal: term
+[2021-09-11 15:45:33 +0300] [116377] [INFO] Worker exiting (pid: 116377)
+[2021-09-11 15:45:33 +0300] [116378] [INFO] Worker exiting (pid: 116378)
+[2021-09-11 15:45:33 +0300] [116379] [INFO] Worker exiting (pid: 116379)
+[2021-09-11 12:45:34 +0000] [116376] [INFO] Shutting down: Master
+[2021-09-11 12:45:41 +0000] [116530] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:45:41 +0000] [116530] [INFO] Listening at: http://127.0.0.1:8000 (116530)
+[2021-09-11 12:45:41 +0000] [116530] [INFO] Using worker: sync
+[2021-09-11 12:45:41 +0000] [116531] [INFO] Booting worker with pid: 116531
+[2021-09-11 12:45:41 +0000] [116532] [INFO] Booting worker with pid: 116532
+[2021-09-11 12:45:41 +0000] [116533] [INFO] Booting worker with pid: 116533
+[2021-09-11 12:46:38 +0000] [116530] [INFO] Handling signal: term
+[2021-09-11 15:46:38 +0300] [116531] [INFO] Worker exiting (pid: 116531)
+[2021-09-11 15:46:38 +0300] [116532] [INFO] Worker exiting (pid: 116532)
+[2021-09-11 15:46:38 +0300] [116533] [INFO] Worker exiting (pid: 116533)
+[2021-09-11 12:46:39 +0000] [116530] [INFO] Shutting down: Master
+[2021-09-11 12:46:47 +0000] [116545] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:46:47 +0000] [116545] [INFO] Listening at: http://127.0.0.1:8000 (116545)
+[2021-09-11 12:46:47 +0000] [116545] [INFO] Using worker: sync
+[2021-09-11 12:46:47 +0000] [116546] [INFO] Booting worker with pid: 116546
+[2021-09-11 12:46:47 +0000] [116549] [INFO] Booting worker with pid: 116549
+[2021-09-11 12:46:47 +0000] [116550] [INFO] Booting worker with pid: 116550
+[2021-09-11 12:51:29 +0000] [116545] [INFO] Handling signal: term
+[2021-09-11 15:51:29 +0300] [116546] [INFO] Worker exiting (pid: 116546)
+[2021-09-11 15:51:29 +0300] [116549] [INFO] Worker exiting (pid: 116549)
+[2021-09-11 15:51:29 +0300] [116550] [INFO] Worker exiting (pid: 116550)
+[2021-09-11 12:51:30 +0000] [116545] [INFO] Shutting down: Master
+[2021-09-11 12:51:38 +0000] [116626] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:51:38 +0000] [116626] [INFO] Listening at: http://127.0.0.1:8000 (116626)
+[2021-09-11 12:51:38 +0000] [116626] [INFO] Using worker: sync
+[2021-09-11 12:51:38 +0000] [116627] [INFO] Booting worker with pid: 116627
+[2021-09-11 12:51:38 +0000] [116628] [INFO] Booting worker with pid: 116628
+[2021-09-11 12:51:38 +0000] [116629] [INFO] Booting worker with pid: 116629
+[2021-09-11 12:59:25 +0000] [116626] [INFO] Handling signal: term
+[2021-09-11 15:59:25 +0300] [116627] [INFO] Worker exiting (pid: 116627)
+[2021-09-11 15:59:25 +0300] [116628] [INFO] Worker exiting (pid: 116628)
+[2021-09-11 15:59:25 +0300] [116629] [INFO] Worker exiting (pid: 116629)
+[2021-09-11 12:59:25 +0000] [116626] [INFO] Shutting down: Master
+[2021-09-11 12:59:32 +0000] [116803] [INFO] Starting gunicorn 20.1.0
+[2021-09-11 12:59:32 +0000] [116803] [INFO] Listening at: http://127.0.0.1:8000 (116803)
+[2021-09-11 12:59:32 +0000] [116803] [INFO] Using worker: sync
+[2021-09-11 12:59:32 +0000] [116804] [INFO] Booting worker with pid: 116804
+[2021-09-11 12:59:32 +0000] [116805] [INFO] Booting worker with pid: 116805
+[2021-09-11 12:59:32 +0000] [116806] [INFO] Booting worker with pid: 116806
+[2021-09-12 09:44:53 +0000] [135343] [INFO] Starting gunicorn 20.1.0
+[2021-09-12 09:44:53 +0000] [135343] [INFO] Listening at: http://127.0.0.1:8000 (135343)
+[2021-09-12 09:44:53 +0000] [135343] [INFO] Using worker: sync
+[2021-09-12 09:44:53 +0000] [135344] [INFO] Booting worker with pid: 135344
+[2021-09-12 09:44:53 +0000] [135345] [INFO] Booting worker with pid: 135345
+[2021-09-12 09:44:53 +0000] [135346] [INFO] Booting worker with pid: 135346
