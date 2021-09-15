@@ -8108,3 +8108,12 @@ Not Found: /config/getuser
 [2021-09-15 17:07:06 +0000] [224171] [INFO] Booting worker with pid: 224171
 [2021-09-15 17:07:06 +0000] [224172] [INFO] Booting worker with pid: 224172
 [2021-09-15 17:07:06 +0000] [224173] [INFO] Booting worker with pid: 224173
+[2021-09-15 17:51:40 +0000] [225456] [INFO] Starting gunicorn 20.1.0
+[2021-09-15 17:51:40 +0000] [225456] [INFO] Listening at: http://127.0.0.1:8000 (225456)
+[2021-09-15 17:51:40 +0000] [225456] [INFO] Using worker: sync
+[2021-09-15 17:51:40 +0000] [225457] [INFO] Booting worker with pid: 225457
+[2021-09-15 17:51:40 +0000] [225458] [INFO] Booting worker with pid: 225458
+[2021-09-15 17:51:40 +0000] [225459] [INFO] Booting worker with pid: 225459
+Not Found: /favicon.ico
+Not Found: /.env
+Forbidden (CSRF cookie not set.): /
