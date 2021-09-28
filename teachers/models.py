@@ -26,10 +26,7 @@ class Teacher(models.Model):
 
     def __str__(self):
         return self.full_name
-
-    def get_absolute_url(self):
-        return reverse("teacher_detail", kwargs={"slug": self.slug})
-    
+        
     class Meta:
         verbose_name = 'Учитель'
         verbose_name_plural = 'Учителя'

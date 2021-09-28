@@ -1,5 +1,4 @@
 from django.db import models
-from django.urls import reverse
 
 class Post(models.Model):
     title = models.CharField(max_length=255, verbose_name="Название поста")
