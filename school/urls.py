@@ -6,7 +6,7 @@ from django.conf.urls.i18n import i18n_patterns
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', admin.site.urls, name='admin'),
     path('', include('teachers.urls')),
     path('', include('posts.urls')),
     path('', include('main.urls')),

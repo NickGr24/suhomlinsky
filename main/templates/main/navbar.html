@@ -3,6 +3,8 @@
 {% url 'teachers' as teachers_url %}
 {% url 'posts' as posts_url %}
 {% url 'contacts' as contacts_url %}
+{% url 'admin' as admin_url %}
+
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-xxl">
@@ -24,6 +26,12 @@
           <li class="nav-item {% if contacts_url == request.path %}show active{% endif %}">
             <a class="nav-link" id="nav-contacts" aria-current="page" href="{{ contacts_url }}">{% blocktrans %}Контакты{% endblocktrans %}</a>
           </li>
+          
+          {% if request.user.is_superuser %}     
+          <li class="nav-item {% if admin_url == request.path %}show active{% endif %} ml">
+            <a class="nav-link" id="nav-admin" aria-current="page" href="{% url 'admin:index' %}">{% blocktrans %}Admin{% endblocktrans %}</a>
+          </li>
+          {% endif %}
         </ul>
         <form class="d-flex" action="{% url 'posts' %}">
           <input class="form-control me-2" type="search" name="search" {% blocktrans %}placeholder="Поиск по сайту"{% endblocktrans %} aria-label="Search">
