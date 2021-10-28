@@ -1,3 +1,1 @@
-$(document).ready( function () {
-    console.log('23r32')
-} );
+console.log('1')

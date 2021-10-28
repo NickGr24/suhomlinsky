@@ -24,6 +24,5 @@ DATABASES = {
 }
 
 STATICFILES_DIRS = [
-    BASE_DIR / 'teachers/static', 
     BASE_DIR / 'main/static',
 ]
