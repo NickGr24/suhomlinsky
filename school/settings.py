@@ -102,15 +102,15 @@ STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media/'
+MEDIA_URL = 'media'
+MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LANGUAGE_CODE = 'ru-RU'
 
 LANGUAGES = (('ru', _('Russian')),
-            ('en', _('English')),
+#            ('en', _('English')),
             ('ro', _('Romanian')),
             ('uk', _('Ukrainian'))
 )
