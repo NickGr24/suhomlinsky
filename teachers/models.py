@@ -22,8 +22,7 @@ class Teacher(models.Model):
     subject = models.CharField(max_length=100, choices=SUBJECT_CHOICES, verbose_name="Предмет")
     description = models.TextField(null=True, blank=True, verbose_name="Описание")
     image = models.ImageField(upload_to='teachers/', verbose_name="Фотография")
-    slug = models.SlugField(verbose_name="URL", null=True, blank=True)
-
+    
     def __str__(self):
         return self.full_name
         

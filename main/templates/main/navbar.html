@@ -4,7 +4,9 @@
 {% url 'posts' as posts_url %}
 {% url 'contacts' as contacts_url %}
 {% url 'admin' as admin_url %}
-
+{% url 'goleni' as goleni_url %}
+{% url 'constantinovca' as constantinovca_url %}
+{% url 'sofrincani' as sofrincani_url %}
 
 <nav class="navbar navbar-expand-lg navbar-light bg-primary">
     <div class="container-xxl">
@@ -26,7 +28,16 @@
           <li class="nav-item {% if contacts_url == request.path %}show active{% endif %}">
             <a class="nav-link" id="nav-contacts" aria-current="page" href="{{ contacts_url }}">{% blocktrans %}Контакты{% endblocktrans %}</a>
           </li>
-          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Филиалы
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="{{ goleni_url }}">Голяны</a>
+              <a class="dropdown-item" href="{{ sofrincani_url }}">Шофрынкань</a>
+              <a class="dropdown-item" href="{{ constantinovca_url }}">Константиновка</a> 
+            </div>
+          </li>
           {% if request.user.is_superuser %}     
           <li class="nav-item {% if admin_url == request.path %}show active{% endif %} ml">
             <a class="nav-link" id="nav-admin" aria-current="page" href="{% url 'admin:index' %}">{% blocktrans %}Admin{% endblocktrans %}</a>
@@ -38,5 +49,6 @@
           <button class="btn btn-outline-dark" type="submit">{% blocktrans %}Искать{% endblocktrans %}</button>
         </form> 
       </div>
+      
     </div>
   </nav>

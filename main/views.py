@@ -10,3 +10,13 @@ def schedule_page(request):
 
 def homepage(request):
     return render(request, 'home.html')
+
+
+def goleni(request):
+    return render(request, 'filials/goleni.html')
+
+def sofrincani(request):
+    return render(request, 'filials/sofrincani.html')
+
+def constantinovca(request):
+    return render(request, 'filials/constantinovca.html')
