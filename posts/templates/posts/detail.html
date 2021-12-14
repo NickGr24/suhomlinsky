@@ -3,7 +3,7 @@
 {% block content %}
 <div class="text-center">
 <h1 class="text-center">{{ post.title }}</h1>
-{% if post.image.url %}
+{% if post.image %}
 <img src="{{ post.image.url }}" class="" width="50%" height="50%"alt="{{ post.title }}">
 {% endif %}
 <p>{{ post.text }}</p>
