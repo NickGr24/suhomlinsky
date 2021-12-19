@@ -6,7 +6,7 @@ from django.core.paginator import Paginator
 
 from django.db.models import Q
 
-from .models import Post
+from .models import Post, PostImage
  
 def posts_list(request):
 
@@ -43,7 +43,8 @@ def posts_list(request):
 
 def post_detail(request, slug):
     post = get_object_or_404(Post, slug=slug)
-    return render(request, 'posts/detail.html', {'post': post})
+    photos = PostImage.objects.filter(post=post)
+    return render(request, 'posts/detail.html', {'post': post, 'photos': photos})
 
     
     
