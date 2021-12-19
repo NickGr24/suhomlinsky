@@ -2,15 +2,11 @@
 {% load i18n %}
 {% load static %}
 {% block content %}
-<style>
-  .slider.slider-horizontal{
-    width:1200px !important;
-    }
-</style>
 <div class="container">
   <div class="row">
     <p class="text-center fs-2 font-semibold p-8">Теоретический лицей им. В. Сухомлинского</p>
   </div>
+<div class="container container-small">
   <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -42,6 +38,7 @@
       <span class="visually-hidden">Следующий</span>
     </button>
   </div>
+</div>
   <div class="row">
     <h1 class="text-center fs-1 my-5">Почему именно мы?</h1>
     <div class="border-5 border-solid ring-4 border-indigo-700">
@@ -57,6 +54,7 @@
       </ul>
     </div>
   </div>
+<div class="container">
   <div class="row">
     <div class="border-5 border-solid ring-4 border-indigo-700 mt-5">
       <h2 class="text-center text-indigo-600 fs-3 mt-3">Большая материальная база</h2>
@@ -114,6 +112,8 @@
       </div>
     </div>
   </div>
+</div>
+<div class="container">
   <div class="row">
     <div class="border-5 border-solid ring-4 border-indigo-700 mt-5">
       <h2 class="text-center text-indigo-600 fs-3 mt-3">Интересные проекты</h2>
@@ -169,9 +169,9 @@
       </div>
     </div>
   </div>
-
+</div>
     </div>
   </div>
 </div>
-
+</div>
 {% endblock content %}
