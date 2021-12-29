@@ -1,0 +1,180 @@
+{% extends "main/base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+<style>
+  .slider.slider-horizontal{
+    width:1200px !important;
+    }
+</style>
+<div class="container">
+  <div class="row">
+    <p class="text-center fs-2 font-semibold p-8">Теоретический лицей им. В. Сухомлинского</p>
+  </div>
+<div class="container container-small">
+  <div id="carouselExampleIndicators" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static '/img/main-photo-min.jpg' %}" class="d-block" alt="Главная фотография">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/img/side-photo-min.jpg' %}" class="d-block" alt="Боковая фотография">
+      </div>
+      <div class="carousel-item">
+        <img src="{% static '/img/sidephoto-min.jpg' %}" class="d-block" alt="Вторая боковая фотография">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Предыдущий</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Следующий</span>
+    </button>
+  </div>
+</div>
+  <div class="row">
+    <h1 class="text-center fs-1 my-5">Почему именно мы?</h1>
+    <div class="border-5 border-solid ring-4 border-indigo-700">
+      <h2 class="text-center fs-3 mt-3 text-indigo-600">Богатая история</h2>
+      <ul class='fs-5'>
+        <li class="ml-5">1965 год - основание Единецкой СШ №3</li>
+        <li class="ml-5">1979 год - присвоен статус школы с преподаванием ряда предметов на иностранном языке
+          (английском)</li>
+        <li class="ml-5">1986 год - открыт первый в Молдове (второй в СССР) школьный кооператив "Интеграл" по пошиву
+          национальных костюмов</li>
+        <li class="ml-5">1998 год - на базе средней школы были открыты лицейские классы с изучением украинского языка
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="border-5 border-solid ring-4 border-indigo-700 mt-5">
+      <h2 class="text-center text-indigo-600 fs-3 mt-3">Большая материальная база</h2>
+      <div class="text-block text-center my-3 font-bold">
+        В нашем лицее только современно оборудованные кабинеты, хорошо экипированный спортзал, уютная столовая и
+        просторный актовый зал
+
+      </div>
+      <div id="base" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#base" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#base" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{% static '/img/primary-school3-min.jpg' %}" class="d-block w-100" alt="Главная фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/decorated-primary-min.jpg' %}" class="d-block w-100" alt="Боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/alley-min.jpg'%}" class="d-block w-100" alt="Аллея">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/canteen2-min.jpg' %}" class="d-block w-100" alt="Столовая">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/assembly1-min.jpg' %}" class="d-block w-100" alt="Актовый зал">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/assembly2-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/gym-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/stadium-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#base" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#base" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="border-5 border-solid ring-4 border-indigo-700 mt-5">
+      <h2 class="text-center text-indigo-600 fs-3 mt-3">Интересные проекты</h2>
+      <div class="text-block text-center">
+        Мы всегда всесторонне развиваемся, являемся активными участниками общественной жизни города
+      </div>
+      <div id="projects" class="carousel slide d-flex justify-content-center" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#projects" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="{% static 'img/1-min.jpg' %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="{% static 'img/2-min.jpg' %}" alt="First slide">
+          </div>
+          <div class="carousel-item">
+              <img class="d-block w-100" src="{% static 'img/3-min.jpg' %}" alt="First slide">  
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/10-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static 'img/5-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/6-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/9-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+          <div class="carousel-item">
+            <img src="{% static '/img/11-min.jpg' %}" class="d-block w-100" alt="Вторая боковая фотография">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projects" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Предыдущий</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projects" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Следующий</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+</div>
+{% endblock content %}
