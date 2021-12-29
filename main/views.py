@@ -11,6 +11,8 @@ def schedule_page(request):
 def homepage(request):
     return render(request, 'home.html')
 
+def handle_not_found(request, exception):
+    return render(request, '404.html', status=404)
 
 def goleni(request):
     return render(request, 'filials/goleni.html')

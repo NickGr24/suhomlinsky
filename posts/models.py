@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Post(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Название поста", help_text="Название поста должно быть уникальным")
+    title = models.CharField(max_length=255, verbose_name="Название поста", unique=True)
     text = models.TextField(verbose_name="Текст поста")
     image = models.ImageField(blank=True, null=True, verbose_name="Картинка поста")
     timestamp = models.DateTimeField(auto_now_add=True)

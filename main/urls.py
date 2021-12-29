@@ -10,3 +10,5 @@ urlpatterns = [
     path('constantinovca/', views.constantinovca, name='constantinovca'),
     path('sofrincani/', views.sofrincani, name='sofrincani'),
 ]
+
+

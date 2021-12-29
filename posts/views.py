@@ -31,12 +31,14 @@ def posts_list(request):
         next_url = '?page={}'.format(page.next_page_number())
     else:
         next_url = ''
-
+    photos = PostImage.objects.all()
     context = {
         'page_object': page,
         'is_paginated': is_paginated,
         'next_url': next_url,
-        'previous_url': previous_url
+        'previous_url': previous_url,
+        'photos': photos,
+        
     }
 
     return render(request, 'posts/home.html', context)
