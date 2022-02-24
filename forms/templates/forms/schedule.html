@@ -1,6 +1,17 @@
 {% extends 'main/base.html' %}
 {% block content %}
 
+<form method="GET">
+    <select class="" name="klass" placeholder="">
+      <option value="">Выберите класс</option>
+      {% for class in classes %}
+      <option value="{{class.id}}" name="klass">{{class.name}}</option>
+      {% endfor %}
+    </select>
+    <a class="btn btn-primary btn-sm" href="{% url 'detailedschedule' class.id%}"></a>
+  </div>
+</form>
+
 <table id="schedule" class="table table-striped table-bordered table-dark">
     <thead>
       <tr>
@@ -9,13 +20,6 @@
         <th scope="col">6</th>
         <th scope="col">7A</th>
         <th scope="col">7Б</th>
-        <th scope="col">8</th>
-        <th scope="col">9</th>
-        <th scope="col">10А</th>
-        <th scope="col">10Б</th>
-        <th scope="col">11</th>
-        <th scope="col">12А</th>
-        <th scope="col">12Б</th>
       </tr>
     </thead>
     <tbody>
@@ -67,22 +71,13 @@
         <td>the Bird</td>
         <td>@twitter</td>
       </tr>
-      <tr>
-        <th scope="row">9</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-      <tr>
-        <th scope="12b">10</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
-    
+
     </tbody>
 
   </table>
 
-  
+  {{ klass_schedule.klass }}
+  {{ klass_schedule.klass }}
+  {{ klass_schedule.first_subject }}
+
   {% endblock content %}

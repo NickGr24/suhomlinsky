@@ -11,6 +11,7 @@ urlpatterns = [
     path('', include('posts.urls')),
     path('', include('main.urls')),
     path('', include('branches.urls')),
+    path('', include('forms.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # urlpatterns  += i18n_patterns(
 #     path('', include('teachers.urls')),

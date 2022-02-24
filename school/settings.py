@@ -16,7 +16,8 @@ INSTALLED_APPS = [
     'main',
     'teachers',
     'posts',
-    'branches'
+    'branches', 
+    'forms'
 ]
 
 MIDDLEWARE = [
